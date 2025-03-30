@@ -1152,6 +1152,11 @@ img {
   padding-bottom: 11.25rem;
   padding-top: 11.25rem
 }
+@media(max-width:61.99875em) {
+  .hero {
+    min-height: 100dvh
+  }
+}
 .hero .hero__container {
   position: relative;
   z-index: 5;
