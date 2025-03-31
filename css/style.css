@@ -1021,7 +1021,7 @@ img {
   justify-content: space-between;
   gap: 1.5rem
 }
-@media(max-width:80em) {
+@media(max-width:61.99875em) {
   .footer .footer__container {
     flex-direction: column;
     justify-content: flex-start
@@ -1141,6 +1141,36 @@ img {
   .footer .footer__phones a:hover {
     color: var(--primary)
   }
+}
+.footer .footer__messengers {
+  flex-wrap: wrap
+}
+.footer .footer__messengers .messengers {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content
+}
+@media(min-width:992px) {
+  .footer .footer__messengers .messengers {
+    max-width: calc(50% - 1.5rem);
+    margin-left: 0
+  }
+}
+.footer .footer__messages {
+  width: 100%;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1.24;
+  margin-top: auto
+}
+@media(min-width:992px) {
+  .footer .footer__messages {
+    text-align: right
+  }
+}
+.footer .messengers__list {
+  display: flex;
+  flex-wrap: wrap
 }
 .hero {
   position: relative;

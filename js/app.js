@@ -1,12 +1,6 @@
 (() => {
     var __webpack_modules__ = {
         757: function(module) {
-            /**
- * lightgallery | 2.8.3 | March 1st 2025
- * http://www.lightgalleryjs.com/
- * Copyright (c) 2020 Sachin Neravath;
- * @license GPLv3
- */
             !function(t, e) {
                 true ? module.exports = e() : 0;
             }(0, (function() {
@@ -37,14 +31,14 @@
                 }, i = "lgContainerResize", s = "lgUpdateSlides", h = "lgBeforeOpen", n = "lgBeforeSlide";
                 return function() {
                     function o(t, e) {
-                        return this.thumbOuterWidth = 0, this.thumbTotalWidth = 0, this.translateX = 0, 
+                        return this.thumbOuterWidth = 0, this.thumbTotalWidth = 0, this.translateX = 0,
                         this.thumbClickable = !1, this.core = t, this.$LG = e, this;
                     }
                     return o.prototype.init = function() {
-                        this.settings = t(t({}, e), this.core.settings), this.thumbOuterWidth = 0, this.thumbTotalWidth = this.core.galleryItems.length * (this.settings.thumbWidth + this.settings.thumbMargin), 
-                        this.translateX = 0, this.setAnimateThumbStyles(), this.core.settings.allowMediaOverlap || (this.settings.toggleThumb = !1), 
-                        this.settings.thumbnail && (this.build(), this.settings.animateThumb ? (this.settings.enableThumbDrag && this.enableThumbDrag(), 
-                        this.settings.enableThumbSwipe && this.enableThumbSwipe(), this.thumbClickable = !1) : this.thumbClickable = !0, 
+                        this.settings = t(t({}, e), this.core.settings), this.thumbOuterWidth = 0, this.thumbTotalWidth = this.core.galleryItems.length * (this.settings.thumbWidth + this.settings.thumbMargin),
+                        this.translateX = 0, this.setAnimateThumbStyles(), this.core.settings.allowMediaOverlap || (this.settings.toggleThumb = !1),
+                        this.settings.thumbnail && (this.build(), this.settings.animateThumb ? (this.settings.enableThumbDrag && this.enableThumbDrag(),
+                        this.settings.enableThumbSwipe && this.enableThumbSwipe(), this.thumbClickable = !1) : this.thumbClickable = !0,
                         this.toggleThumbBar(), this.thumbKeyPress());
                     }, o.prototype.build = function() {
                         var t = this;
@@ -65,7 +59,7 @@
                             t.rebuildThumbnails();
                         })), this.core.LGel.on(i + ".thumb", (function() {
                             t.core.lgOpened && setTimeout((function() {
-                                t.thumbOuterWidth = t.core.outer.get().offsetWidth, t.animateThumb(t.core.index), 
+                                t.thumbOuterWidth = t.core.outer.get().offsetWidth, t.animateThumb(t.core.index),
                                 t.thumbOuterWidth = t.core.outer.get().offsetWidth;
                             }), 50);
                         }));
@@ -73,9 +67,9 @@
                         var t = "lg-thumb-outer ";
                         this.settings.alignThumbnails && (t += "lg-thumb-align-" + this.settings.alignThumbnails);
                         var e = '<div class="' + t + '">\n        <div class="lg-thumb lg-group">\n        </div>\n        </div>';
-                        this.core.outer.addClass("lg-has-thumb"), ".lg-components" === this.settings.appendThumbnailsTo ? this.core.$lgComponents.append(e) : this.core.outer.append(e), 
-                        this.$thumbOuter = this.core.outer.find(".lg-thumb-outer").first(), this.$lgThumb = this.core.outer.find(".lg-thumb").first(), 
-                        this.settings.animateThumb && this.core.outer.find(".lg-thumb").css("transition-duration", this.core.settings.speed + "ms").css("width", this.thumbTotalWidth + "px").css("position", "relative"), 
+                        this.core.outer.addClass("lg-has-thumb"), ".lg-components" === this.settings.appendThumbnailsTo ? this.core.$lgComponents.append(e) : this.core.outer.append(e),
+                        this.$thumbOuter = this.core.outer.find(".lg-thumb-outer").first(), this.$lgThumb = this.core.outer.find(".lg-thumb").first(),
+                        this.settings.animateThumb && this.core.outer.find(".lg-thumb").css("transition-duration", this.core.settings.speed + "ms").css("width", this.thumbTotalWidth + "px").css("position", "relative"),
                         this.setThumbItemHtml(this.core.galleryItems);
                     }, o.prototype.enableThumbDrag = function() {
                         var t = this, e = {
@@ -90,13 +84,13 @@
                             touchMoveTime: 0
                         }, i = !1;
                         this.$thumbOuter.addClass("lg-grab"), this.core.outer.find(".lg-thumb").first().on("mousedown.lg.thumb", (function(s) {
-                            t.thumbTotalWidth > t.thumbOuterWidth && (s.preventDefault(), e.cords.startX = s.pageX, 
-                            e.startTime = new Date, t.thumbClickable = !1, i = !0, t.core.outer.get().scrollLeft += 1, 
+                            t.thumbTotalWidth > t.thumbOuterWidth && (s.preventDefault(), e.cords.startX = s.pageX,
+                            e.startTime = new Date, t.thumbClickable = !1, i = !0, t.core.outer.get().scrollLeft += 1,
                             t.core.outer.get().scrollLeft -= 1, t.$thumbOuter.removeClass("lg-grab").addClass("lg-grabbing"));
                         })), this.$LG(window).on("mousemove.lg.thumb.global" + this.core.lgId, (function(s) {
                             t.core.lgOpened && i && (e.cords.endX = s.pageX, e = t.onThumbTouchMove(e));
                         })), this.$LG(window).on("mouseup.lg.thumb.global" + this.core.lgId, (function() {
-                            t.core.lgOpened && (e.isMoved ? e = t.onThumbTouchEnd(e) : t.thumbClickable = !0, 
+                            t.core.lgOpened && (e.isMoved ? e = t.onThumbTouchEnd(e) : t.thumbClickable = !0,
                             i && (i = !1, t.$thumbOuter.removeClass("lg-grabbing").addClass("lg-grab")));
                         }));
                     }, o.prototype.enableThumbSwipe = function() {
@@ -112,10 +106,10 @@
                             touchMoveTime: 0
                         };
                         this.$lgThumb.on("touchstart.lg", (function(i) {
-                            t.thumbTotalWidth > t.thumbOuterWidth && (i.preventDefault(), e.cords.startX = i.targetTouches[0].pageX, 
+                            t.thumbTotalWidth > t.thumbOuterWidth && (i.preventDefault(), e.cords.startX = i.targetTouches[0].pageX,
                             t.thumbClickable = !1, e.startTime = new Date);
                         })), this.$lgThumb.on("touchmove.lg", (function(i) {
-                            t.thumbTotalWidth > t.thumbOuterWidth && (i.preventDefault(), e.cords.endX = i.targetTouches[0].pageX, 
+                            t.thumbTotalWidth > t.thumbOuterWidth && (i.preventDefault(), e.cords.endX = i.targetTouches[0].pageX,
                             e = t.onThumbTouchMove(e));
                         })), this.$lgThumb.on("touchend.lg", (function() {
                             e.isMoved ? e = t.onThumbTouchEnd(e) : t.thumbClickable = !0;
@@ -123,8 +117,8 @@
                     }, o.prototype.rebuildThumbnails = function() {
                         var t = this;
                         this.$thumbOuter.addClass("lg-rebuilding-thumbnails"), setTimeout((function() {
-                            t.thumbTotalWidth = t.core.galleryItems.length * (t.settings.thumbWidth + t.settings.thumbMargin), 
-                            t.$lgThumb.css("width", t.thumbTotalWidth + "px"), t.$lgThumb.empty(), t.setThumbItemHtml(t.core.galleryItems), 
+                            t.thumbTotalWidth = t.core.galleryItems.length * (t.settings.thumbWidth + t.settings.thumbMargin),
+                            t.$lgThumb.css("width", t.thumbTotalWidth + "px"), t.$lgThumb.empty(), t.setThumbItemHtml(t.core.galleryItems),
                             t.animateThumb(t.core.index);
                         }), 50), setTimeout((function() {
                             t.$thumbOuter.removeClass("lg-rebuilding-thumbnails");
@@ -132,7 +126,7 @@
                     }, o.prototype.setTranslate = function(t) {
                         this.$lgThumb.css("transform", "translate3d(-" + t + "px, 0px, 0px)");
                     }, o.prototype.getPossibleTransformX = function(t) {
-                        return t > this.thumbTotalWidth - this.thumbOuterWidth && (t = this.thumbTotalWidth - this.thumbOuterWidth), 
+                        return t > this.thumbTotalWidth - this.thumbOuterWidth && (t = this.thumbTotalWidth - this.thumbOuterWidth),
                         t < 0 && (t = 0), t;
                     }, o.prototype.animateThumb = function(t) {
                         if (this.$lgThumb.css("transition-duration", this.core.settings.speed + "ms"), this.settings.animateThumb) {
@@ -149,30 +143,30 @@
                               case "right":
                                 e = this.thumbOuterWidth - this.settings.thumbWidth;
                             }
-                            this.translateX = (this.settings.thumbWidth + this.settings.thumbMargin) * t - 1 - e, 
-                            this.translateX > this.thumbTotalWidth - this.thumbOuterWidth && (this.translateX = this.thumbTotalWidth - this.thumbOuterWidth), 
+                            this.translateX = (this.settings.thumbWidth + this.settings.thumbMargin) * t - 1 - e,
+                            this.translateX > this.thumbTotalWidth - this.thumbOuterWidth && (this.translateX = this.thumbTotalWidth - this.thumbOuterWidth),
                             this.translateX < 0 && (this.translateX = 0), this.setTranslate(this.translateX);
                         }
                     }, o.prototype.onThumbTouchMove = function(t) {
-                        return t.newTranslateX = this.translateX, t.isMoved = !0, t.touchMoveTime = (new Date).valueOf(), 
-                        t.newTranslateX -= t.cords.endX - t.cords.startX, t.newTranslateX = this.getPossibleTransformX(t.newTranslateX), 
+                        return t.newTranslateX = this.translateX, t.isMoved = !0, t.touchMoveTime = (new Date).valueOf(),
+                        t.newTranslateX -= t.cords.endX - t.cords.startX, t.newTranslateX = this.getPossibleTransformX(t.newTranslateX),
                         this.setTranslate(t.newTranslateX), this.$thumbOuter.addClass("lg-dragging"), t;
                     }, o.prototype.onThumbTouchEnd = function(t) {
                         t.isMoved = !1, t.endTime = new Date, this.$thumbOuter.removeClass("lg-dragging");
                         var e = t.endTime.valueOf() - t.startTime.valueOf(), i = t.cords.endX - t.cords.startX, s = Math.abs(i) / e;
-                        return s > .15 && t.endTime.valueOf() - t.touchMoveTime < 30 ? ((s += 1) > 2 && (s += 1), 
-                        s += s * (Math.abs(i) / this.thumbOuterWidth), this.$lgThumb.css("transition-duration", Math.min(s - 1, 2) + "settings"), 
-                        i *= s, this.translateX = this.getPossibleTransformX(this.translateX - i), this.setTranslate(this.translateX)) : this.translateX = t.newTranslateX, 
-                        Math.abs(t.cords.endX - t.cords.startX) < this.settings.thumbnailSwipeThreshold && (this.thumbClickable = !0), 
+                        return s > .15 && t.endTime.valueOf() - t.touchMoveTime < 30 ? ((s += 1) > 2 && (s += 1),
+                        s += s * (Math.abs(i) / this.thumbOuterWidth), this.$lgThumb.css("transition-duration", Math.min(s - 1, 2) + "settings"),
+                        i *= s, this.translateX = this.getPossibleTransformX(this.translateX - i), this.setTranslate(this.translateX)) : this.translateX = t.newTranslateX,
+                        Math.abs(t.cords.endX - t.cords.startX) < this.settings.thumbnailSwipeThreshold && (this.thumbClickable = !0),
                         t;
                     }, o.prototype.getThumbHtml = function(t, e, i) {
                         var s, h = this.core.galleryItems[e].__slideVideoInfo || {};
                         s = h.youtube && this.settings.loadYouTubeThumbnail ? "//img.youtube.com/vi/" + h.youtube[1] + "/" + this.settings.youTubeThumbSize + ".jpg" : t;
                         var n = document.createElement("div");
-                        n.setAttribute("data-lg-item-id", e + ""), n.className = "lg-thumb-item " + (e === this.core.index ? "active" : ""), 
+                        n.setAttribute("data-lg-item-id", e + ""), n.className = "lg-thumb-item " + (e === this.core.index ? "active" : ""),
                         n.style.cssText = "width: " + this.settings.thumbWidth + "px; height: " + this.settings.thumbHeight + "; margin-right: " + this.settings.thumbMargin + "px;";
                         var o = document.createElement("img");
-                        return o.alt = i || "", o.setAttribute("data-lg-item-id", e + ""), o.src = s, n.appendChild(o), 
+                        return o.alt = i || "", o.setAttribute("data-lg-item-id", e + ""), o.src = s, n.appendChild(o),
                         n;
                     }, o.prototype.setThumbItemHtml = function(t) {
                         for (var e = 0; e < t.length; e++) {
@@ -189,20 +183,20 @@
                         }));
                     }, o.prototype.toggleThumbBar = function() {
                         var t = this;
-                        this.settings.toggleThumb && (this.core.outer.addClass("lg-can-toggle"), this.core.$toolbar.append('<button type="button" aria-label="' + this.settings.thumbnailPluginStrings.toggleThumbnails + '" class="lg-toggle-thumb lg-icon"></button>'), 
+                        this.settings.toggleThumb && (this.core.outer.addClass("lg-can-toggle"), this.core.$toolbar.append('<button type="button" aria-label="' + this.settings.thumbnailPluginStrings.toggleThumbnails + '" class="lg-toggle-thumb lg-icon"></button>'),
                         this.core.outer.find(".lg-toggle-thumb").first().on("click.lg", (function() {
                             t.core.outer.toggleClass("lg-components-open");
                         })));
                     }, o.prototype.thumbKeyPress = function() {
                         var t = this;
                         this.$LG(window).on("keydown.lg.thumb.global" + this.core.lgId, (function(e) {
-                            t.core.lgOpened && t.settings.toggleThumb && (38 === e.keyCode ? (e.preventDefault(), 
-                            t.core.outer.addClass("lg-components-open")) : 40 === e.keyCode && (e.preventDefault(), 
+                            t.core.lgOpened && t.settings.toggleThumb && (38 === e.keyCode ? (e.preventDefault(),
+                            t.core.outer.addClass("lg-components-open")) : 40 === e.keyCode && (e.preventDefault(),
                             t.core.outer.removeClass("lg-components-open")));
                         }));
                     }, o.prototype.destroy = function() {
-                        this.settings.thumbnail && (this.$LG(window).off(".lg.thumb.global" + this.core.lgId), 
-                        this.core.LGel.off(".lg.thumb"), this.core.LGel.off(".thumb"), this.$thumbOuter.remove(), 
+                        this.settings.thumbnail && (this.$LG(window).off(".lg.thumb.global" + this.core.lgId),
+                        this.core.LGel.off(".lg.thumb"), this.core.LGel.off(".thumb"), this.$thumbOuter.remove(),
                         this.core.outer.removeClass("lg-has-thumb"));
                     }, o;
                 }();
@@ -4168,6 +4162,7 @@
                 spaceBetween: 20,
                 observer: true,
                 observeParents: true,
+                watchSlidesProgress: true,
                 speed: 800,
                 pagination: {
                     el: ".swiper-pagination",
@@ -4262,7 +4257,7 @@ PERFORMANCE OF THIS SOFTWARE.
         function __spreadArrays() {
             for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
             var r = Array(s), k = 0;
-            for (i = 0; i < il; i++) for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, 
+            for (i = 0; i < il; i++) for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++,
             k++) r[k] = a[j];
             return r;
         }
