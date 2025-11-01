@@ -5,8 +5,10 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250331204050">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20251102000032">
 	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -15,6 +17,9 @@
 		<header class="header" data-scroll-show>
 			<div class="header__container">
 				<a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__phones-mobile phones">
+					<a href="tel:+380673876135" class="phones__icon _icon-phone"></a>
+				</div>
 				<button class="icon-menu" type="button">
 					<div class="lines">
 						<span></span>
@@ -25,49 +30,92 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item"><a href="#calendar" class="menu__link">consultation</a></li>
-								<li class="menu__item"><a href="#our-services" class="menu__link">our services</a></li>
-								<li class="menu__item"><a href="#about-us" class="menu__link">about us</a></li>
+								<li class="menu__item sub-in">
+									<a href="/service" class="menu__link _icon-arrow-down">our services</a>
+									<ul class="menu__sublist sublist">
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">health insurance</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">life insurance</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">accident protection</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">Accidental disability</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">criticall illness protection</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">Dental | Vision</a>
+										</li>
+										<li class="sublist__item">
+											<a class="sublist__link" href="#">Employees | group coverage</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item"><a href="/about-us" class="menu__link">about us</a></li>
 								<li class="menu__item"><a href="#why-us" class="menu__link">why us</a></li>
 								<li class="menu__item"><a href="#reviews" class="menu__link">reviews</a></li>
+								<li class="menu__item"><a href="/contacts" class="menu__link">Contacts</a></li>
 							</ul>
 						</nav>
 					</div>
+
 					<div class="header__phones phones">
-						<div class="phones__main">
-							<div class="phones__icon _icon-phone"></div>
-							<button class="phone" type="button">
-								<span>+38 067 387 61 35</span>
-								<span class="arrow-down  _icon-arrow-down"></span>
-							</button>
-							<div class="phones__dropdown">
-								<ul>
-									<li><a href="tel:+380673876135">+38 067 387 61 35</a></li>
-									<li><a href="tel:+380663759898">+38 066 375 98 98</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="messengers">
-						<ul class="messengers__list">
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-whatsapp" data-label="whatsapp"></a>
-							</li>
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-telegram" data-label="telegram"></a>
-							</li>
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-facebook" data-label="facebook"></a>
-							</li>
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-instagram" data-label="instagram"></a>
-							</li>
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-linkedin" data-label="linkedin"></a>
-							</li>
-							<li class="messengers__item">
-								<a href="#" target="_blank" class="messengers__link _icon-twiter" data-label="twiter"></a>
-							</li>
+						<a href="tel:+380673876135" class="phones__icon _icon-phone"></a>
+
+						<!-- <div class="phones__main">
+					<div class="phones__icon _icon-phone"></div>
+					<button class="phone" type="button">
+						<span>+38 067 387 61 35</span>
+						<span class="arrow-down  _icon-arrow-down"></span>
+					</button>
+					<div class="phones__dropdown">
+						<ul>
+							<li><a href="tel:+380673876135">+38 067 387 61 35</a></li>
+							<li><a href="tel:+380663759898">+38 066 375 98 98</a></li>
 						</ul>
+					</div>
+				</div> -->
+					</div>
+					<div class="header__bottom">
+						<div class="messengers">
+							<button class="messengers__btn _icon-arrow-down">Our social networks</button>
+							<ul class="messengers__list">
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-whatsapp" data-label="whatsapp">whatsapp</a>
+								</li>
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-telegram" data-label="telegram">telegram</a>
+								</li>
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-facebook" data-label="facebook">facebook</a>
+								</li>
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-instagram" data-label="instagram">instagram</a>
+								</li>
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-linkedin" data-label="linkedin">linkedin</a>
+								</li>
+								<li class="messengers__item">
+									<a href="#" target="_blank" class="messengers__link _icon-twiter" data-label="twiter">twiter</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="header__lang lang">
+							<ul class="lang__list">
+								<li class="lang__item">
+									<a href="#" class="lang__link active" aria-label="lang-en">en</a>
+								</li>
+								<li class="lang__item">
+									<a href="#" class="lang__link " aria-label="lang-ru">Ru</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -196,83 +244,132 @@
 
 						<div class="about-us__content">
 							<h3 class="about-us__title title">About us</h3>
-							<p class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard
-								dummy text ever since the 1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen
-								book. It has survived not only five centuries, but also the leap into electronic
-								typesetting, remaining essentially
-								unchanged.</p>
+							<div class="about-us__text">
+								<p>My name is Yurii Illichov, founder of Krainity Insurance Solutions. I’m proud to
+									serve individuals, families, and
+									business owners by helping them find clear, personalized health coverage—without
+									stress or confusion.</p>
+								<p>With a Law degree that sharpens my ability to do top-tier due diligence, I bring a
+									detailed and honest approach to every
+									conversation. Coming from Ukraine, I understand deeply how vital it is to protect
+									your life and health. That’s why I
+									named my company Krainity—a blend of Ukraine and Serenity—to reflect my mission of
+									giving clients true peace of mind,
+									safety, and stability through solid, reliable coverage.</p>
+								<p>To me, this work goes beyond business—it’s a form of spiritual service. I’m here to
+									help make healthcare more accessible
+									and affordable, while giving you the confidence that you’re protected.</p>
+							</div>
+							<a class="button-border" href="#">Learn more</a>
+
 						</div>
+
 					</div>
 				</div>
 			</section>
 			<section class="section why-us" id="our-services">
 				<div class="why-us__container">
 					<h2 class="why-us__title title">our services</h2>
-					<div class="why-us__list ">
+					<div class="why-us__list">
 						<div class="why-us__item">
 							<div class="why-us__icon">
-								<img src="img/individual.svg" alt="Individual Icon">
+								<img src="img/services/health.svg" alt="health insurance">
 							</div>
-							<h3 class="why-us__heading">Individual | Family</h3>
+							<h3 class="why-us__heading">health insurance</h3>
 							<p class="why-us__text">
-								Compare individual or family options. Usually there are two ways to get a good
-								coverage
+								Compare individual or family options. Usually there are two ways to get a good coverage
+								based on your income or based on
+								your health Compare individual or family options. Usually there are two ways to get a
+								good coverage based on your income
+								or based on your healthCompare individual or family options. Usually there are two ways
+								to get a good coverage based on
+								your income or based on your health
+							</p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
+						</div>
+						<div class="why-us__item">
+							<div class="why-us__icon">
+								<img src="img/services/life.svg" alt="life insurance">
+							</div>
+							<h3 class="why-us__heading">life insurance</h3>
+							<p class="why-us__text">
+								Compare individual or family options. Usually there are two ways to get a good coverage
 								based on your income or based on
 								your health
 							</p>
-						</div>
-						<div class="why-us__item">
-							<div class="why-us__icon">
-								<img src="img/group.svg" alt="Employee Icon">
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
 							</div>
-							<h3 class="why-us__heading">Group | Employee</h3>
-							<p class="why-us__text">
-								Group plans are offered from employer. If you are a business owner please,
-								contact
-								us to
-								set
-								up a free consultation and
-								find the best fit!
-							</p>
 						</div>
 						<div class="why-us__item">
 							<div class="why-us__icon">
-								<img src="img/accidental.svg" alt="Accidental Icon">
+								<img src="img/services/accident.svg" alt="accident protection">
 							</div>
-							<h3 class="why-us__heading">Accidental</h3>
+							<h3 class="why-us__heading">accident protection</h3>
 							<p class="why-us__text">
-								Accidental coverage provides financial relief when unexpected injury cost occur.
-								This
-								type
-								of policy works in addition
-								to your primary policy
-							</p>
+								Compare individual or family options. Usually there are two ways to get a good coverage
+								based on your income or based on
+								your health.Usually there are two ways to get a good coverage based on your income or
+								based on your health </p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
 						</div>
 						<div class="why-us__item">
 							<div class="why-us__icon">
-								<img src="img/dental.svg" alt="Dental Icon">
+								<img src="img/services/accidental.svg" alt="Accidental disability">
+							</div>
+							<h3 class="why-us__heading">Accidental disability</h3>
+							<p class="why-us__text">
+								Compare individual or family options. Usually there are two ways to get a good coverage
+							</p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
+						</div>
+						<div class="why-us__item">
+							<div class="why-us__icon">
+								<img src="img/services/criticall.svg" alt="criticall illness protection">
+							</div>
+							<h3 class="why-us__heading">criticall illness protection</h3>
+							<p class="why-us__text">
+								Compare individual or family options. Usually there are two ways to get a good coverage
+								based on your income or based on
+								your health
+							</p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
+						</div>
+						<div class="why-us__item">
+							<div class="why-us__icon">
+								<img src="img/services/dental.svg" alt="Dental | Vision">
 							</div>
 							<h3 class="why-us__heading">Dental | Vision</h3>
 							<p class="why-us__text">
-								Did you know that the average cost for dental crown is $1500? Routine dental and
-								vision
-								check up can protect you from
-								large expenses
+								Compare individual or family options. Usually there are two ways to get a good coverage
+								based on your income or based on
+								your health
 							</p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
 						</div>
 						<div class="why-us__item">
 							<div class="why-us__icon">
-								<img src="img/telehealth.svg" alt="Telehealth Icon">
+								<img src="img/services/employees.svg" alt="Employees | group coverage">
 							</div>
-							<h3 class="why-us__heading">Telehealth | 24/7</h3>
+							<h3 class="why-us__heading">Employees | group coverage</h3>
 							<p class="why-us__text">
-								Save a trip to the doctor office. Licensed doctor over the phone or video chat
-								24/7 for
-								common minor health issues, flu
-								symptoms, infections, skin, etc..
+								Compare individual or family options. Usually there are two ways to get a good coverage
+								based on your income or based on
+								your health
 							</p>
+							<div class="why-us__bottom">
+								<a class="why-us__link button" href="#">Get a Quote</a>
+							</div>
 						</div>
 					</div>
 
@@ -511,9 +608,10 @@
 
 			<div class="section calendar" id="calendar">
 				<div class="calendar__container">
+					<h2 class="calendar__title title">get in touch</h2>
 					<!-- Calendly inline widget begin -->
 					<div class="calendly-inline-widget" data-url="https://calendly.com/yuriy-illichov/health-insurance" style="min-width:320px;height:700px;"></div>
-					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js?_v=20250331204050" async></script>
+					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js?_v=20251102000032" async></script>
 					<!-- Calendly inline widget end -->
 				</div>
 			</div>
@@ -709,61 +807,78 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="/" class="footer__logo"><img src="img/logo.svg" alt=""></a>
-
-				<div class="footer__row">
-					<div class="footer__col">
-						<nav class="footer__nav">
-							<ul class="footer__list">
-								<li class="footer__item"><a href="#calendar" class="footer__link">Consultation</a></li>
-								<li class="footer__item"><a href="#our-services" class="footer__link">Our services</a></li>
-								<li class="footer__item"><a href="#about-us" class="footer__link">About us</a></li>
-								<li class="footer__item"><a href="#why-us" class="footer__link">Why us</a></li>
-								<li class="footer__item"><a href="#reviews" class="footer__link">Reviews</a></li>
-							</ul>
-						</nav>
-						<div class="footer__contact">
-							<h4 class="footer__heading">Contacts</h4>
-							<div class="footer__phones">
-								<a href="tel:+380673876135">+38 067 387 61 35</a>
-								<a href="tel:+380663759898">+38 066 375 98 98</a>
+				<div class="footer__inner">
+					<div class="footer__top">
+						<a href="/" class="footer__logo"><img src="img/logo.svg" alt=""></a>
+						<div class="footer__text">
+							<p>
+								The information provided on this website is for general informational purposes only and does not
+								constitute legal,
+								financial, or medical advice. Please consult a licensed professional regarding your specific
+								situation.
+							</p>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__col">
+							<nav class="footer__nav">
+								<h4 class="footer__heading">Pages</h4>
+								<ul class="footer__list">
+									<li class="footer__item"><a href="#calendar" class="footer__link">Consultation</a></li>
+									<li class="footer__item"><a href="#our-services" class="footer__link">Our services</a></li>
+									<li class="footer__item"><a href="#about-us" class="footer__link">About us</a></li>
+									<li class="footer__item"><a href="#why-us" class="footer__link">Why us</a></li>
+									<li class="footer__item"><a href="#reviews" class="footer__link">Reviews</a></li>
+								</ul>
+							</nav>
+							<div class="footer__contact">
+								<h4 class="footer__heading">Contacts</h4>
+								<div class="footer__phones contact">
+									<a class="contact__link _icon-phone" href="tel:+380673876135">+38 067 387 61 35</a>
+									<a class="contact__link _icon-phone" href="tel:+380663759898">+38 066 375 98 98</a>
+									<a class="contact__link _icon-email" href="mailto:yuriy.illichov@gmail.com">yuriy.illichov@gmail.com</a>
+									<a class="contact__link _icon-location" href="https://www.google.com/maps/place/5701+E+Hillsborough+Ave,+Tampa,+FL+33610" target="_blank">
+										5701 E Hillsborough Ave Tampa, FL 33610
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="footer__col footer__messengers">
-						<div class="messengers">
-							<h4 class="messengers__title">Our social networks</h4>
-							<ul class="messengers__list">
-								<li class="messengers__item">
-									<a href="#" target="_blank" class="messengers__link _icon-twiter" data-label="twiter"></a>
-								</li>
-								<li class="messengers__item">
-									<a href="#" target="_blank" class="messengers__link _icon-facebook" data-label="facebook"></a>
-								</li>
-								<li class="messengers__item">
-									<a href="#" target="_blank" class="messengers__link _icon-instagram" data-label="instagram"></a>
-								</li>
-							</ul>
-						</div>
-						<div class="messengers">
-							<h4 class="messengers__title">Our Messengers</h4>
-							<ul class="messengers__list">
-								<li class="messengers__item">
-									<a href="#" target="_blank" class="messengers__link _icon-telegram" data-label="telegram"></a>
-								</li>
-								<li class="messengers__item">
-									<a href="#" target="_blank" class="messengers__link _icon-whatsapp" data-label="whatsapp"></a>
-								</li>
-							</ul>
-						</div>
+						<div class="footer__col footer__messengers">
+							<div class="messengers">
+								<h4 class="messengers__title">Our social networks</h4>
+								<ul class="messengers__list">
+									<li class="messengers__item">
+										<a href="#" target="_blank" class="messengers__link _icon-twiter" data-label="twiter"></a>
+									</li>
+									<li class="messengers__item">
+										<a href="#" target="_blank" class="messengers__link _icon-facebook" data-label="facebook"></a>
+									</li>
+									<li class="messengers__item">
+										<a href="#" target="_blank" class="messengers__link _icon-instagram" data-label="instagram"></a>
+									</li>
+								</ul>
+							</div>
+							<div class="messengers">
+								<h4 class="messengers__title">Our Messengers</h4>
+								<ul class="messengers__list">
+									<li class="messengers__item">
+										<a href="#" target="_blank" class="messengers__link _icon-telegram" data-label="telegram"></a>
+									</li>
+									<li class="messengers__item">
+										<a href="#" target="_blank" class="messengers__link _icon-whatsapp" data-label="whatsapp"></a>
+									</li>
+								</ul>
+							</div>
 
-						<div class="footer__messages">family owned and operated</div>
+
+						</div>
 					</div>
 				</div>
+				<div class="footer__messages">Family owned and operated</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250331204050"></script>
+	<script src="js/app.min.js?_v=20251102000032"></script>
 </body>
 
 </html>
